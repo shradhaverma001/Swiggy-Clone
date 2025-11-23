@@ -134,3 +134,10 @@ console.log(output);
 
 
 // display how many person are of particular age
+let ares = users.reduce((count, x)=>{
+  if(x.age > 40)
+    count++;
+  return count
+},0);
+
+console.log(ares);
